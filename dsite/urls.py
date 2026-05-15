@@ -1,3 +1,0 @@
-# dsite/urls.py
-
-urlpatterns = []

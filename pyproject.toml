@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsite"
+version = "1.0.0"
+description = "DSite - Web framework XML-powered per Python"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "DeMENIGECO"}
+]
+
+dependencies = []
+
+keywords = ["web", "framework", "xml", "python", "dsites"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: Apache Software License"
+]
+
+[project.urls]
+Homepage = "https://demenigeco.github.io/dsite-projects/"
+Repository = "https://github.com/DeMENIGECO/dsite-project"
+Issues = "https://github.com/DeMENIGECO/dsite-project/issues"
+
+[project.scripts]
+dsite = "dsite.cli:main"
+dsite-admin = "dsite.admin.cli:main"

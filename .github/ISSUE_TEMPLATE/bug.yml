@@ -1,0 +1,84 @@
+name: 🐛 Bug Report
+description: Segnala un bug in DSite
+title: "[BUG] "
+labels: ["bug"]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver segnalato un bug in DSite!  
+        Descrivi il problema nel modo più chiaro possibile.
+
+  - type: input
+    id: summary
+    attributes:
+      label: 📌 Riassunto del bug
+      description: Spiega in breve cosa non funziona
+      placeholder: "Esempio: il server non si avvia con runserver"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔁 Passi per riprodurre il bug
+      description: Scrivi i passaggi per far comparire il problema
+      placeholder: |
+        1. Eseguo dsite createproject test
+        2. Entro nella cartella
+        3. Avvio il server
+        4. Errore appare
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Comportamento previsto
+      description: Cosa dovrebbe succedere?
+      placeholder: "Il server dovrebbe avviarsi senza errori"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Comportamento attuale
+      description: Cosa succede invece?
+      placeholder: "Il server crasha con errore X"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📄 Log / Errori
+      description: Incolla eventuali errori del terminale
+      render: shell
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: 📦 Versione DSite
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: python
+    attributes:
+      label: 🐍 Versione Python
+      placeholder: "3.11"
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 🧩 Informazioni extra
+      description: Aggiungi qualsiasi altra informazione utile
+    validations:
+      required: false

@@ -1,0 +1,71 @@
+name: ✨ Feature Request
+description: Suggerisci una nuova funzionalità per DSite
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        🚀 Hai un'idea per migliorare DSite?  
+        Descrivila qui in modo chiaro!
+
+  - type: input
+    id: summary
+    attributes:
+      label: 📌 Nome della feature
+      description: Dai un nome breve alla tua idea
+      placeholder: "Esempio: supporto middleware avanzato"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: ❓ Problema che risolve
+      description: Che problema risolve questa feature?
+      placeholder: "Oggi è difficile gestire X senza questa funzione"
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 Soluzione proposta
+      description: Come dovrebbe funzionare la feature?
+      placeholder: |
+        - aggiungere nuovo metodo
+        - nuovo tag XML
+        - nuova funzione CLI
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: 🧪 Esempio di utilizzo
+      description: Mostra come verrebbe usata
+      render: python
+      placeholder: |
+        from dsite.middleware import MyMiddleware
+
+        def home(request):
+            return render(request, "home.xml")
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternative
+      description: Ci sono altri modi per farlo?
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 🧩 Informazioni extra
+      description: Altri dettagli utili
+    validations:
+      required: false

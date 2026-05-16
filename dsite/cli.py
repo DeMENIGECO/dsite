@@ -190,10 +190,10 @@ DEBUG = True #Disattivalo in produzione!
     pages = app / "pages"
     pages.mkdir()
 
-    homepage_xml = f'''<!-
+    homepage_xml = f'''<!--
 Per costruire la tua prima pagina, guarda:
 https://demenigeco.github.io/dsite-project/it/1.0.0/docs/init
-->
+-->
 '''
 
     (pages / "homepage.xml").write_text(
@@ -201,10 +201,10 @@ https://demenigeco.github.io/dsite-project/it/1.0.0/docs/init
         encoding="utf-8"
     )
 
-    base_xml = '''<!-
+    base_xml = '''<!--
 Per costruire il tuo primo layout base, guarda:
 https://demenigeco.github.io/dsite-project/it/1.0.0/docs/init
-->
+-->
 '''
 
     (pages / "base.xml").write_text(

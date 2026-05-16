@@ -28,7 +28,7 @@ def create_project(project_name):
     # ROOT
     # ---------------------------------
 
-    root.mkdir()
+    root.mkdir(parents=True, exist_ok=True)
 
     # ---------------------------------
     # MANAGE.PY
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
     app = root / project_name
 
-    app.mkdir()
+    app.mkdir(parents=True, exist_ok=True)
 
     # __init__.py
 

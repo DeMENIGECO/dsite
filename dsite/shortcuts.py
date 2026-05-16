@@ -1,5 +1,5 @@
 
-from .templates import render_template
+from .template import render_template
 from .response import Response
 
 

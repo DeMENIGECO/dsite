@@ -17,6 +17,7 @@ builtin_services = [
   #Di Dsite.services
   "dsite.services",
   "dsite.services.management",
+  "dsite.services.index"
 
   #Altro
   "dsite.admin"

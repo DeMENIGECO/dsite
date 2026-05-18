@@ -9,7 +9,7 @@ builtin_services = [
   "dsite.http.router",
 
   #di Dsite.management
-  "dsite.management"
+  "dsite.management",
   "dsite.management.adminsite",
   "dsite.management.migrations",
   "dsite.management.runserver",

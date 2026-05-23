@@ -21,6 +21,6 @@ Io:
 
 ## Checklist
 
-- [ ] Questa PR rispetta le [Contributing Guidelines](https://github.com/DeMENIGECO/dsite/tree/main/CONTRIBUTING.md) e il [Codice di condotta](https://github.com/DeMENIGECO/dsite/tree/main/CODE_OF_CONDUCT.md)
+- [ ] Questa PR rispetta le [Contributing Guidelines](https://github.com/DeMENIGECO/dsite/tree/main/.github/CONTRIBUTING.md) e il [Codice di condotta](https://github.com/DeMENIGECO/dsite/tree/main/.github/CODE_OF_CONDUCT.md)
 - [ ] Ho verificato che questa PR non esista giá
 - [ ] Questa PR non stravolga tutto DSite

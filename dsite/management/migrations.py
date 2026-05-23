@@ -12,11 +12,12 @@ def makemigrations(project_name):
     fileofmig = Path(migration)
     MIG_ROOT = Path(__file__)
     subprocess.run(f"tar -czvf {fileofmig} *")
-    subprocess.rub("mkdir project_migrations")
+    subprocess.run("mkdir project_migrations")
     subprocess.run(f"cp {fileofmig} project_migrations/")
     print("[DSite] Fatte migrazioni")
     
 
 def migrate(project_name):
     print(f"[DSite] migrate per {project_name}")
+    subprocess.run("cp project_migrations/migration.tar.gz .")
     print("[DSite] database sincronizzato")

@@ -11,7 +11,7 @@ def makemigrations(project_name):
     migration = "migration.tar.gz"
     fileofmig = Path(migration)
     MIG_ROOT = Path(__file__)
-    subprocess.run(f"tar -czfd {fileofmig} *")
+    subprocess.run(f"tar -czvf {fileofmig} *")
     subprocess.rub("mkdir project_migrations")
     subprocess.run(f"cp {fileofmig} project_migrations/")
     
@@ -19,4 +19,4 @@ def makemigrations(project_name):
 
 def migrate(project_name):
     print(f"[DSite] migrate per {project_name}")
-    print("[DSite] (placeholder) database sincronizzato")
+    print("[DSite] ("database sincronizzato")

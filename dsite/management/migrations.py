@@ -14,9 +14,9 @@ def makemigrations(project_name):
     subprocess.run(f"tar -czvf {fileofmig} *")
     subprocess.rub("mkdir project_migrations")
     subprocess.run(f"cp {fileofmig} project_migrations/")
-    
+    print("[DSite] Fatte migrazioni")
     
 
 def migrate(project_name):
     print(f"[DSite] migrate per {project_name}")
-    print("[DSite] ("database sincronizzato")
+    print("[DSite] database sincronizzato")

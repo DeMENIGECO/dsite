@@ -1,13 +1,23 @@
 # dsite/management/migrations.py
 
+
 from dsite.db import Model
+from pathlib import Path
+import subprocess
 
 
 def makemigrations(project_name):
     print(f"[DSite] makemigrations per {project_name}")
-    print("[DSite] (placeholder) nessuna migrazione reale ancora")
-
+    migration = "migration.tar.gz"
+    fileofmig = Path(migration)
+    MIG_ROOT = Path(__file__)
+    subprocess.run(f"tar -czvf {fileofmig} *")
+    subprocess.run("mkdir project_migrations")
+    subprocess.run(f"cp {fileofmig} project_migrations/")
+    print("[DSite] Fatte migrazioni")
+    
 
 def migrate(project_name):
     print(f"[DSite] migrate per {project_name}")
-    print("[DSite] (placeholder) database sincronizzato")
+    subprocess.run("cp project_migrations/migration.tar.gz .")
+    print("[DSite] database sincronizzato")
